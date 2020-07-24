@@ -1,0 +1,64 @@
+camel:
+  springboot:
+    # The Camel context name
+    name: CamelRestSql
+  component:
+    servlet:
+      mapping:
+        enabled: true
+        context-path: /camel-rest-sql/*
+
+# Binding health checks to a different port
+management:
+  port: 8083
+
+# disable all management enpoints except health
+endpoints:
+  enabled: false
+  health:
+    enabled: true
+
+#server:
+ # port : 8084
+  #address : 0.0.0.0
+
+server:
+  ssl:
+    key-store: classpath:server.jks
+    key-store-password: mykeypass
+    key-store-type: jks
+    key-alias: alias
+    key-password: mykeypass
+  port: 8442
+  address : 0.0.0.0
+
+#spring:
+#   Spring JDBC configuration
+#  datasource:
+ #   url:      jdbc:mysql://localhost:3306/elearn?serverTimezone=EST5EDT
+ #   username: root
+  #  password: Oa03216287@
+ #   defaultAutoCommit: true
+ #   autoReconnect: true
+ #   useSSL: false
+
+    
+#    spring:
+  # Spring JDBC configuration
+ # datasource:
+  #  url:      jdbc:mysql://${${mysql.service.name}.service.host}:${${mysql.service.name}.service.port}/${mysql.service.database}
+  #  username: user7SS
+  #  password: qLipb2eRpLsKdJLT
+    
+
+  # Spring JDBC configuration
+# test:
+#   datasource:
+#    url: jdbc:oracle:thin:@192.168.1.122:1521/orcl
+#    username: super_conf
+#    password: super_conf
+
+# The application configuration properties
+quickstart:
+  generateOrderPeriod: 2s
+  processOrderPeriod: 5s

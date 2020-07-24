@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "billingplatform.fullname" . }}
+  labels:
+    app: {{ template "billingplatform.name" . }}
+    chart: {{ template "billingplatform.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ template "billingplatform.name" . }}
+    release: {{ .Release.Name }}

@@ -1,0 +1,700 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36mio.fabric8.quickstarts:spring[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding Fabric8 :: Quickstarts :: Spring-Boot :: Camel REST / SQL 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mspring-boot-maven-plugin:1.5.4.RELEASE:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36mspring[0;1m >>>[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 9 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 28 source files to /home/elearn/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mspring-boot-maven-plugin:1.5.4.RELEASE:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36mspring[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:1.5.4.RELEASE:run[m [1m(default-cli)[m @ [36mspring[0;1m ---[m
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.4.RELEASE)
+
+2020-07-14 13:06:15.175  INFO 11787 --- [           main] i.fabric8.quickstarts.camel.Application  : Starting Application on Segmatek-Kitkat with PID 11787 (/home/elearn/target/classes started by root in /home/elearn)
+2020-07-14 13:06:15.178  INFO 11787 --- [           main] i.fabric8.quickstarts.camel.Application  : The following profiles are active: dev
+2020-07-14 13:06:15.236  INFO 11787 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a7bbe09: startup date [Tue Jul 14 13:06:15 UTC 2020]; root of context hierarchy
+2020-07-14 13:06:16.124  INFO 11787 --- [           main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring/camel-context.xml]
+2020-07-14 13:06:16.394  INFO 11787 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'servletRegistrationBean' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=application; factoryMethodName=servletRegistrationBean; initMethodName=null; destroyMethodName=(inferred); defined in io.fabric8.quickstarts.camel.Application] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.apache.camel.component.servlet.springboot.ServletMappingAutoConfiguration; factoryMethodName=servletRegistrationBean; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/apache/camel/component/servlet/springboot/ServletMappingAutoConfiguration.class]]
+2020-07-14 13:06:16.480  INFO 11787 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Dbcp; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Dbcp.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2020-07-14 13:06:17.155  INFO 11787 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$80bae987] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-14 13:06:17.168  INFO 11787 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5e912368] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-14 13:06:17.482  INFO 11787 --- [           main] org.xnio                                 : XNIO version 3.3.6.Final
+2020-07-14 13:06:17.502  INFO 11787 --- [           main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.6.Final
+2020-07-14 13:06:17.602  WARN 11787 --- [           main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2020-07-14 13:06:17.602  WARN 11787 --- [           main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-07-14 13:06:17.629  INFO 11787 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-07-14 13:06:17.629  INFO 11787 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2396 ms
+2020-07-14 13:06:17.987  INFO 11787 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'CamelServlet' to [/camel-rest-sql/*]
+2020-07-14 13:06:17.990  INFO 11787 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-07-14 13:06:17.993  INFO 11787 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2020-07-14 13:06:17.995  INFO 11787 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-07-14 13:06:17.995  INFO 11787 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-07-14 13:06:17.995  INFO 11787 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-07-14 13:06:17.995  INFO 11787 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-07-14 13:06:17.995  INFO 11787 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2020-07-14 13:06:17.995  INFO 11787 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2020-07-14 13:06:18.692  INFO 11787 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a7bbe09: startup date [Tue Jul 14 13:06:15 UTC 2020]; root of context hierarchy
+2020-07-14 13:06:18.807  INFO 11787 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-07-14 13:06:18.808  INFO 11787 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-07-14 13:06:18.870  INFO 11787 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 13:06:18.871  INFO 11787 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 13:06:18.939  INFO 11787 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 13:06:20.076  INFO 11787 --- [           main] o.a.c.i.converter.DefaultTypeConverter   : Loaded 207 type converters
+2020-07-14 13:06:21.117  INFO 11787 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/home/elearn/target/classes/schema.sql]
+2020-07-14 13:06:21.125  INFO 11787 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/home/elearn/target/classes/schema.sql] in 8 ms.
+2020-07-14 13:06:21.680  INFO 11787 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-07-14 13:06:21.697  INFO 11787 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a73ce26: startup date [Tue Jul 14 13:06:21 UTC 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a7bbe09
+2020-07-14 13:06:21.735  INFO 11787 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'handlerExceptionResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=handlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=endpointWebMvcChildContextConfiguration; factoryMethodName=compositeHandlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcChildContextConfiguration]
+2020-07-14 13:06:21.784  INFO 11787 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-07-14 13:06:21.785  INFO 11787 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 87 ms
+2020-07-14 13:06:21.787  INFO 11787 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-07-14 13:06:21.847  INFO 11787 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2020-07-14 13:06:21.863  INFO 11787 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.endpoint.mvc.ManagementErrorEndpoint.invoke()
+2020-07-14 13:06:21.871  INFO 11787 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 13:06:21.871  INFO 11787 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 13:06:21.888  INFO 11787 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a73ce26: startup date [Tue Jul 14 13:06:21 UTC 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a7bbe09
+2020-07-14 13:06:22.004  INFO 11787 --- [           main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-07-14 13:06:22.005  INFO 11787 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a73ce26: startup date [Tue Jul 14 13:06:21 UTC 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a7bbe09
+2020-07-14 13:06:22.010 ERROR 11787 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Embedded servlet container failed to start. Port 8083 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8083 or configure this application to listen on another port.
+
+2020-07-14 13:06:22.011  INFO 11787 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a7bbe09: startup date [Tue Jul 14 13:06:15 UTC 2020]; root of context hierarchy
+2020-07-14 13:06:22.015  WARN 11787 --- [           main] ationConfigEmbeddedWebApplicationContext : Exception thrown from LifecycleProcessor on context close
+
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a7bbe09: startup date [Tue Jul 14 13:06:15 UTC 2020]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:427) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:999) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:958) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:750) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at io.fabric8.quickstarts.camel.Application.main(Application.java:110) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_252]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_252]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_252]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_252]
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:527) [spring-boot-maven-plugin-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_252]
+
+2020-07-14 13:06:22.016  INFO 11787 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-07-14 13:06:22.019  INFO 11787 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.19.1 (CamelContext: CamelRestSql) is shutting down
+2020-07-14 13:06:22.034  INFO 11787 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.19.1 (CamelContext: CamelRestSql) uptime 
+2020-07-14 13:06:22.035  INFO 11787 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.19.1 (CamelContext: CamelRestSql) is shutdown in 0.016 seconds
+[[1;33mWARNING[m] 
+[1;31mjava.lang.reflect.InvocationTargetException[m
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:498[m)
+    [1mat[m org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run ([1mAbstractRunMojo.java:527[m)
+    [1mat[m java.lang.Thread.run ([1mThread.java:748[m)
+[1mCaused by[m: org.springframework.boot.context.embedded.PortInUseException: [1;31mPort 8083 is already in use[m
+    [1mat[m org.springframework.boot.context.embedded.undertow.UndertowEmbeddedServletContainer.start ([1mUndertowEmbeddedServletContainer.java:169[m)
+    [1mat[m org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer ([1mEmbeddedWebApplicationContext.java:297[m)
+    [1mat[m org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh ([1mEmbeddedWebApplicationContext.java:145[m)
+    [1mat[m org.springframework.context.support.AbstractApplicationContext.refresh ([1mAbstractApplicationContext.java:546[m)
+    [1mat[m org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh ([1mEmbeddedWebApplicationContext.java:122[m)
+    [1mat[m org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.createChildManagementContext ([1mEndpointWebMvcAutoConfiguration.java:193[m)
+    [1mat[m org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.afterSingletonsInstantiated ([1mEndpointWebMvcAutoConfiguration.java:156[m)
+    [1mat[m org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons ([1mDefaultListableBeanFactory.java:781[m)
+    [1mat[m org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization ([1mAbstractApplicationContext.java:867[m)
+    [1mat[m org.springframework.context.support.AbstractApplicationContext.refresh ([1mAbstractApplicationContext.java:543[m)
+    [1mat[m org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh ([1mEmbeddedWebApplicationContext.java:122[m)
+    [1mat[m org.springframework.boot.SpringApplication.refresh ([1mSpringApplication.java:693[m)
+    [1mat[m org.springframework.boot.SpringApplication.refreshContext ([1mSpringApplication.java:360[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:303[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1118[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1107[m)
+    [1mat[m io.fabric8.quickstarts.camel.Application.main ([1mApplication.java:110[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:498[m)
+    [1mat[m org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run ([1mAbstractRunMojo.java:527[m)
+    [1mat[m java.lang.Thread.run ([1mThread.java:748[m)
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36mio.fabric8.quickstarts:spring[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding Fabric8 :: Quickstarts :: Spring-Boot :: Camel REST / SQL 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mspring-boot-maven-plugin:1.5.4.RELEASE:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36mspring[0;1m >>>[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 9 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 28 source files to /home/elearn/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mspring-boot-maven-plugin:1.5.4.RELEASE:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36mspring[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:1.5.4.RELEASE:run[m [1m(default-cli)[m @ [36mspring[0;1m ---[m
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.4.RELEASE)
+
+2020-07-14 13:09:04.622  INFO 11908 --- [           main] i.fabric8.quickstarts.camel.Application  : Starting Application on Segmatek-Kitkat with PID 11908 (/home/elearn/target/classes started by root in /home/elearn)
+2020-07-14 13:09:04.625  INFO 11908 --- [           main] i.fabric8.quickstarts.camel.Application  : The following profiles are active: dev
+2020-07-14 13:09:04.680  INFO 11908 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a1ea7a3: startup date [Tue Jul 14 13:09:04 UTC 2020]; root of context hierarchy
+2020-07-14 13:09:05.613  INFO 11908 --- [           main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring/camel-context.xml]
+2020-07-14 13:09:05.932  INFO 11908 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'servletRegistrationBean' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=application; factoryMethodName=servletRegistrationBean; initMethodName=null; destroyMethodName=(inferred); defined in io.fabric8.quickstarts.camel.Application] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.apache.camel.component.servlet.springboot.ServletMappingAutoConfiguration; factoryMethodName=servletRegistrationBean; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/apache/camel/component/servlet/springboot/ServletMappingAutoConfiguration.class]]
+2020-07-14 13:09:06.010  INFO 11908 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Dbcp; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Dbcp.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2020-07-14 13:09:06.646  INFO 11908 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$8042e01a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-14 13:09:06.659  INFO 11908 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5e1919fb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-14 13:09:06.941  INFO 11908 --- [           main] org.xnio                                 : XNIO version 3.3.6.Final
+2020-07-14 13:09:06.957  INFO 11908 --- [           main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.6.Final
+2020-07-14 13:09:07.042  WARN 11908 --- [           main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2020-07-14 13:09:07.043  WARN 11908 --- [           main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-07-14 13:09:07.080  INFO 11908 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-07-14 13:09:07.080  INFO 11908 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2405 ms
+2020-07-14 13:09:07.458  INFO 11908 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'CamelServlet' to [/camel-rest-sql/*]
+2020-07-14 13:09:07.461  INFO 11908 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-07-14 13:09:07.464  INFO 11908 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2020-07-14 13:09:07.465  INFO 11908 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-07-14 13:09:07.465  INFO 11908 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-07-14 13:09:07.466  INFO 11908 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-07-14 13:09:07.466  INFO 11908 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-07-14 13:09:07.466  INFO 11908 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2020-07-14 13:09:07.466  INFO 11908 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2020-07-14 13:09:08.034  INFO 11908 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a1ea7a3: startup date [Tue Jul 14 13:09:04 UTC 2020]; root of context hierarchy
+2020-07-14 13:09:08.125  INFO 11908 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-07-14 13:09:08.126  INFO 11908 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-07-14 13:09:08.168  INFO 11908 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 13:09:08.169  INFO 11908 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 13:09:08.219  INFO 11908 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 13:09:09.159  INFO 11908 --- [           main] o.a.c.i.converter.DefaultTypeConverter   : Loaded 207 type converters
+2020-07-14 13:09:10.144  INFO 11908 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/home/elearn/target/classes/schema.sql]
+2020-07-14 13:09:10.154  INFO 11908 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/home/elearn/target/classes/schema.sql] in 9 ms.
+2020-07-14 13:09:10.705  INFO 11908 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-07-14 13:09:10.716  INFO 11908 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d29bc52: startup date [Tue Jul 14 13:09:10 UTC 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a1ea7a3
+2020-07-14 13:09:10.749  INFO 11908 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'handlerExceptionResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=handlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=endpointWebMvcChildContextConfiguration; factoryMethodName=compositeHandlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcChildContextConfiguration]
+2020-07-14 13:09:10.798  INFO 11908 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-07-14 13:09:10.799  INFO 11908 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 83 ms
+2020-07-14 13:09:10.801  INFO 11908 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-07-14 13:09:10.861  INFO 11908 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2020-07-14 13:09:10.876  INFO 11908 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.endpoint.mvc.ManagementErrorEndpoint.invoke()
+2020-07-14 13:09:10.883  INFO 11908 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 13:09:10.884  INFO 11908 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 13:09:10.902  INFO 11908 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d29bc52: startup date [Tue Jul 14 13:09:10 UTC 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a1ea7a3
+2020-07-14 13:09:11.010  INFO 11908 --- [           main] b.c.e.u.UndertowEmbeddedServletContainer : Undertow started on port(s) 8083 (https)
+2020-07-14 13:09:11.015  INFO 11908 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2020-07-14 13:09:11.128  INFO 11908 --- [           main] o.a.camel.spring.boot.RoutesCollector    : Loading additional Camel XML routes from: classpath:camel/*.xml
+2020-07-14 13:09:11.129  INFO 11908 --- [           main] o.a.camel.spring.boot.RoutesCollector    : Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+2020-07-14 13:09:11.130  INFO 11908 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.19.1 (CamelContext: CamelRestSql) is starting
+2020-07-14 13:09:11.132  INFO 11908 --- [           main] o.a.c.m.ManagedManagementStrategy        : JMX is enabled
+2020-07-14 13:09:11.255  INFO 11908 --- [           main] o.a.c.i.DefaultRuntimeEndpointRegistry   : Runtime endpoint registry is in extended mode gathering usage statistics of all incoming and outgoing endpoints (cache limit: 1000)
+2020-07-14 13:09:11.420  INFO 11908 --- [           main] o.a.camel.spring.SpringCamelContext      : StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+2020-07-14 13:09:11.538  INFO 11908 --- [           main] o.a.camel.spring.SpringCamelContext      : Route: drools-rate-api started and consuming from: servlet:/whatsapp?httpMethodRestrict=POST
+2020-07-14 13:09:11.539  INFO 11908 --- [           main] o.a.camel.spring.SpringCamelContext      : Route: route1 started and consuming from: servlet:/api-doc?httpMethodRestrict=GET&matchOnUriPrefix=true
+2020-07-14 13:09:11.540  INFO 11908 --- [           main] o.a.camel.spring.SpringCamelContext      : Total 2 routes, of which 2 are started.
+2020-07-14 13:09:11.541  INFO 11908 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.19.1 (CamelContext: CamelRestSql) started in 0.410 seconds
+2020-07-14 13:09:11.543  INFO 11908 --- [           main] o.a.c.c.s.CamelHttpTransportServlet      : Initialized CamelHttpTransportServlet[name=CamelServlet, contextPath=]
+2020-07-14 13:09:11.554  INFO 11908 --- [           main] b.c.e.u.UndertowEmbeddedServletContainer : Undertow started on port(s) 8443 (https)
+2020-07-14 13:09:11.559  INFO 11908 --- [           main] i.fabric8.quickstarts.camel.Application  : Started Application in 7.353 seconds (JVM running for 13.468)
+2020-07-14 13:10:56.067  INFO 11908 --- [  XNIO-3 task-3] drools-rate-api                          : Hello !
+2020-07-14 13:10:56.072  INFO 11908 --- [  XNIO-3 task-3] DEBUG                                    : Exchange[ExchangePattern: InOut, Headers: {Accept=*/*, AccountSid=AC3ee681fcead38f95d83923cf18500a84, ApiVersion=2010-04-01, Body=Hello !, breadcrumbId=ID-Segmatek-Kitkat-40635-1594732148363-0-1, Cache-Control=max-age=259200, CamelHttpCharacterEncoding=UTF-8, CamelHttpMethod=POST, CamelHttpPath=/, CamelHttpQuery=null, CamelHttpServletRequest=HttpServletRequestImpl [ POST /camel-rest-sql/whatsapp/ ], CamelHttpServletResponse=io.undertow.servlet.spec.HttpServletResponseImpl@2b4b6549, CamelHttpUri=/camel-rest-sql/whatsapp/, CamelHttpUrl=https://twilio/camel-rest-sql/whatsapp/, CamelServletContextPath=/whatsapp, Connection=close, Content-Length=323, Content-Type=application/x-www-form-urlencoded, From=whatsapp:+96176882660, Host=twilio, I-Twilio-Idempotency-Token=89669192-7f61-47dd-bb29-f487d19ab84c, MessageSid=SM2fed5dc47ec6c329092c8a1a098866d1, NumMedia=0, NumSegments=1, SmsMessageSid=SM2fed5dc47ec6c329092c8a1a098866d1, SmsSid=SM2fed5dc47ec6c329092c8a1a098866d1, SmsStatus=received, To=whatsapp:+14155238886, User-Agent=TwilioProxy/1.1, X-Twilio-Signature=68HYDtRF26HBi9V2QojrQ/8/w1A=}, BodyType: String, Body: ]
+2020-07-14 13:11:49.038  INFO 11908 --- [  XNIO-3 task-6] drools-rate-api                          : 😂
+2020-07-14 13:11:49.041  INFO 11908 --- [  XNIO-3 task-6] DEBUG                                    : Exchange[ExchangePattern: InOut, Headers: {Accept=*/*, AccountSid=AC3ee681fcead38f95d83923cf18500a84, ApiVersion=2010-04-01, Body=😂, breadcrumbId=ID-Segmatek-Kitkat-40635-1594732148363-0-3, Cache-Control=max-age=259200, CamelHttpCharacterEncoding=UTF-8, CamelHttpMethod=POST, CamelHttpPath=/, CamelHttpQuery=null, CamelHttpServletRequest=HttpServletRequestImpl [ POST /camel-rest-sql/whatsapp/ ], CamelHttpServletResponse=io.undertow.servlet.spec.HttpServletResponseImpl@471d184d, CamelHttpUri=/camel-rest-sql/whatsapp/, CamelHttpUrl=https://twilio/camel-rest-sql/whatsapp/, CamelServletContextPath=/whatsapp, Connection=close, Content-Length=326, Content-Type=application/x-www-form-urlencoded, From=whatsapp:+96176882660, Host=twilio, I-Twilio-Idempotency-Token=577a6d1b-60ae-4d31-9099-191bdceeede0, MessageSid=SMbc415bf5510654a914411f467930b467, NumMedia=0, NumSegments=1, SmsMessageSid=SMbc415bf5510654a914411f467930b467, SmsSid=SMbc415bf5510654a914411f467930b467, SmsStatus=received, To=whatsapp:+14155238886, User-Agent=TwilioProxy/1.1, X-Twilio-Signature=y/qUvfdfFAAT4nsfkIcfqyUoIC0=}, BodyType: String, Body: ]
+2020-07-14 13:11:50.152  INFO 11908 --- [  XNIO-3 task-9] drools-rate-api                          : 🥂
+2020-07-14 13:11:50.152  INFO 11908 --- [  XNIO-3 task-9] DEBUG                                    : Exchange[ExchangePattern: InOut, Headers: {Accept=*/*, AccountSid=AC3ee681fcead38f95d83923cf18500a84, ApiVersion=2010-04-01, Body=🥂, breadcrumbId=ID-Segmatek-Kitkat-40635-1594732148363-0-5, Cache-Control=max-age=259200, CamelHttpCharacterEncoding=UTF-8, CamelHttpMethod=POST, CamelHttpPath=/, CamelHttpQuery=null, CamelHttpServletRequest=HttpServletRequestImpl [ POST /camel-rest-sql/whatsapp/ ], CamelHttpServletResponse=io.undertow.servlet.spec.HttpServletResponseImpl@3b81406e, CamelHttpUri=/camel-rest-sql/whatsapp/, CamelHttpUrl=https://twilio/camel-rest-sql/whatsapp/, CamelServletContextPath=/whatsapp, Connection=close, Content-Length=326, Content-Type=application/x-www-form-urlencoded, From=whatsapp:+96176882660, Host=twilio, I-Twilio-Idempotency-Token=d0d9aaeb-ecac-4045-8432-26147fec4c52, MessageSid=SMdfe57b24cb1f058243d0dbb2eb799797, NumMedia=0, NumSegments=1, SmsMessageSid=SMdfe57b24cb1f058243d0dbb2eb799797, SmsSid=SMdfe57b24cb1f058243d0dbb2eb799797, SmsStatus=received, To=whatsapp:+14155238886, User-Agent=TwilioProxy/1.1, X-Twilio-Signature=AUI3TbqGj+CAmmSrPtdpbR35tyk=}, BodyType: String, Body: ]
+2020-07-14 13:26:52.298  INFO 11908 --- [ XNIO-3 task-12] drools-rate-api                          : يارب ارحمنا 🙏🏻
+2020-07-14 13:26:52.300  INFO 11908 --- [ XNIO-3 task-12] DEBUG                                    : Exchange[ExchangePattern: InOut, Headers: {Accept=*/*, AccountSid=AC3ee681fcead38f95d83923cf18500a84, ApiVersion=2010-04-01, Body=يارب ارحمنا 🙏🏻, breadcrumbId=ID-Segmatek-Kitkat-40635-1594732148363-0-7, Cache-Control=max-age=259200, CamelHttpCharacterEncoding=UTF-8, CamelHttpMethod=POST, CamelHttpPath=/, CamelHttpQuery=null, CamelHttpServletRequest=HttpServletRequestImpl [ POST /camel-rest-sql/whatsapp/ ], CamelHttpServletResponse=io.undertow.servlet.spec.HttpServletResponseImpl@69b0d355, CamelHttpUri=/camel-rest-sql/whatsapp/, CamelHttpUrl=https://twilio/camel-rest-sql/whatsapp/, CamelServletContextPath=/whatsapp, Connection=close, Content-Length=399, Content-Type=application/x-www-form-urlencoded, From=whatsapp:+9613001294, Host=twilio, I-Twilio-Idempotency-Token=a25aa0f8-ed7b-4676-a2c1-76cac0a50b35, MessageSid=SM63665acbfac6a63fc8702e77e610f8a6, NumMedia=0, NumSegments=1, SmsMessageSid=SM63665acbfac6a63fc8702e77e610f8a6, SmsSid=SM63665acbfac6a63fc8702e77e610f8a6, SmsStatus=received, To=whatsapp:+14155238886, User-Agent=TwilioProxy/1.1, X-Twilio-Signature=nxZOJQdQHnTOlto1C1Ub48e2qps=}, BodyType: String, Body: ]
+2020-07-14 13:27:27.726  INFO 11908 --- [ XNIO-3 task-15] drools-rate-api                          : جرب حظك
+2020-07-14 13:27:27.727  INFO 11908 --- [ XNIO-3 task-15] DEBUG                                    : Exchange[ExchangePattern: InOut, Headers: {Accept=*/*, AccountSid=AC3ee681fcead38f95d83923cf18500a84, ApiVersion=2010-04-01, Body=جرب حظك, breadcrumbId=ID-Segmatek-Kitkat-40635-1594732148363-0-9, Cache-Control=max-age=259200, CamelHttpCharacterEncoding=UTF-8, CamelHttpMethod=POST, CamelHttpPath=/, CamelHttpQuery=null, CamelHttpServletRequest=HttpServletRequestImpl [ POST /camel-rest-sql/whatsapp/ ], CamelHttpServletResponse=io.undertow.servlet.spec.HttpServletResponseImpl@6196f20c, CamelHttpUri=/camel-rest-sql/whatsapp/, CamelHttpUrl=https://twilio/camel-rest-sql/whatsapp/, CamelServletContextPath=/whatsapp, Connection=close, Content-Length=350, Content-Type=application/x-www-form-urlencoded, From=whatsapp:+9613001294, Host=twilio, I-Twilio-Idempotency-Token=9ad3de1f-499d-4091-a266-cb4d2055a478, MessageSid=SM1f927c7f4d52da376a7f107ddd902a42, NumMedia=0, NumSegments=1, SmsMessageSid=SM1f927c7f4d52da376a7f107ddd902a42, SmsSid=SM1f927c7f4d52da376a7f107ddd902a42, SmsStatus=received, To=whatsapp:+14155238886, User-Agent=TwilioProxy/1.1, X-Twilio-Signature=XahVUY793k4D5ZVwR6srElFTzVg=}, BodyType: String, Body: ]
+2020-07-14 13:27:55.704  INFO 11908 --- [ XNIO-3 task-18] drools-rate-api                          : كيفك
+2020-07-14 13:27:55.704  INFO 11908 --- [ XNIO-3 task-18] DEBUG                                    : Exchange[ExchangePattern: InOut, Headers: {Accept=*/*, AccountSid=AC3ee681fcead38f95d83923cf18500a84, ApiVersion=2010-04-01, Body=كيفك, breadcrumbId=ID-Segmatek-Kitkat-40635-1594732148363-0-11, Cache-Control=max-age=259200, CamelHttpCharacterEncoding=UTF-8, CamelHttpMethod=POST, CamelHttpPath=/, CamelHttpQuery=null, CamelHttpServletRequest=HttpServletRequestImpl [ POST /camel-rest-sql/whatsapp/ ], CamelHttpServletResponse=io.undertow.servlet.spec.HttpServletResponseImpl@7d5417d1, CamelHttpUri=/camel-rest-sql/whatsapp/, CamelHttpUrl=https://twilio/camel-rest-sql/whatsapp/, CamelServletContextPath=/whatsapp, Connection=close, Content-Length=337, Content-Type=application/x-www-form-urlencoded, From=whatsapp:+9613001294, Host=twilio, I-Twilio-Idempotency-Token=e7c416d9-ca75-4abd-9b7d-aab8b7840a88, MessageSid=SMe322d3d73ea0b0729b79874d38af4c6c, NumMedia=0, NumSegments=1, SmsMessageSid=SMe322d3d73ea0b0729b79874d38af4c6c, SmsSid=SMe322d3d73ea0b0729b79874d38af4c6c, SmsStatus=received, To=whatsapp:+14155238886, User-Agent=TwilioProxy/1.1, X-Twilio-Signature=aXYzCbC9N7IdWG2H/fzkQMnVehk=}, BodyType: String, Body: ]
+2020-07-14 13:36:22.912  INFO 11908 --- [ XNIO-3 task-21] drools-rate-api                          : I love you koko
+2020-07-14 13:36:22.913  INFO 11908 --- [ XNIO-3 task-21] DEBUG                                    : Exchange[ExchangePattern: InOut, Headers: {Accept=*/*, AccountSid=AC3ee681fcead38f95d83923cf18500a84, ApiVersion=2010-04-01, Body=I love you koko, breadcrumbId=ID-Segmatek-Kitkat-40635-1594732148363-0-13, Cache-Control=max-age=259200, CamelHttpCharacterEncoding=UTF-8, CamelHttpMethod=POST, CamelHttpPath=/, CamelHttpQuery=null, CamelHttpServletRequest=HttpServletRequestImpl [ POST /camel-rest-sql/whatsapp/ ], CamelHttpServletResponse=io.undertow.servlet.spec.HttpServletResponseImpl@22d89cb8, CamelHttpUri=/camel-rest-sql/whatsapp/, CamelHttpUrl=https://twilio/camel-rest-sql/whatsapp/, CamelServletContextPath=/whatsapp, Connection=close, Content-Length=328, Content-Type=application/x-www-form-urlencoded, From=whatsapp:+9613001294, Host=twilio, I-Twilio-Idempotency-Token=14221633-9367-4d6a-bb48-8e9b553ac1fb, MessageSid=SM9e9e6cf1b63b42db362f9de5905b5d78, NumMedia=0, NumSegments=1, SmsMessageSid=SM9e9e6cf1b63b42db362f9de5905b5d78, SmsSid=SM9e9e6cf1b63b42db362f9de5905b5d78, SmsStatus=received, To=whatsapp:+14155238886, User-Agent=TwilioProxy/1.1, X-Twilio-Signature=EsddmoVjvz4JGOVK7F0uOtGnJJg=}, BodyType: String, Body: ]
+2020-07-14 14:43:22.920  INFO 11908 --- [ XNIO-3 task-24] drools-rate-api                          : Good afternoon
+2020-07-14 14:43:22.921  INFO 11908 --- [ XNIO-3 task-24] DEBUG                                    : Exchange[ExchangePattern: InOut, Headers: {Accept=*/*, AccountSid=AC3ee681fcead38f95d83923cf18500a84, ApiVersion=2010-04-01, Body=Good afternoon, breadcrumbId=ID-Segmatek-Kitkat-40635-1594732148363-0-15, Cache-Control=max-age=259200, CamelHttpCharacterEncoding=UTF-8, CamelHttpMethod=POST, CamelHttpPath=/, CamelHttpQuery=null, CamelHttpServletRequest=HttpServletRequestImpl [ POST /camel-rest-sql/whatsapp/ ], CamelHttpServletResponse=io.undertow.servlet.spec.HttpServletResponseImpl@472d7a63, CamelHttpUri=/camel-rest-sql/whatsapp/, CamelHttpUrl=https://twilio/camel-rest-sql/whatsapp/, CamelServletContextPath=/whatsapp, Connection=close, Content-Length=329, Content-Type=application/x-www-form-urlencoded, From=whatsapp:+201000783752, Host=twilio, I-Twilio-Idempotency-Token=fccb156c-afe2-403d-98c9-fed76c620e58, MessageSid=SM5dd2586745b2bd24ff23d98c0d9ce5b7, NumMedia=0, NumSegments=1, SmsMessageSid=SM5dd2586745b2bd24ff23d98c0d9ce5b7, SmsSid=SM5dd2586745b2bd24ff23d98c0d9ce5b7, SmsStatus=received, To=whatsapp:+14155238886, User-Agent=TwilioProxy/1.1, X-Twilio-Signature=TsUHvlIVopMhJ51Dz0elZhW5ghQ=}, BodyType: String, Body: ]
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36mio.fabric8.quickstarts:spring[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding Fabric8 :: Quickstarts :: Spring-Boot :: Camel REST / SQL 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mspring-boot-maven-plugin:1.5.4.RELEASE:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36mspring[0;1m >>>[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 9 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 28 source files to /home/elearn/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mspring-boot-maven-plugin:1.5.4.RELEASE:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36mspring[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:1.5.4.RELEASE:run[m [1m(default-cli)[m @ [36mspring[0;1m ---[m
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.4.RELEASE)
+
+2020-07-14 19:54:38.637  INFO 20080 --- [           main] i.fabric8.quickstarts.camel.Application  : Starting Application on Segmatek-Kitkat with PID 20080 (/home/elearn/target/classes started by root in /home/elearn)
+2020-07-14 19:54:38.641  INFO 20080 --- [           main] i.fabric8.quickstarts.camel.Application  : The following profiles are active: dev
+2020-07-14 19:54:38.703  INFO 20080 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2e76d8d9: startup date [Tue Jul 14 19:54:38 UTC 2020]; root of context hierarchy
+2020-07-14 19:54:39.611  INFO 20080 --- [           main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring/camel-context.xml]
+2020-07-14 19:54:39.875  INFO 20080 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'servletRegistrationBean' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=application; factoryMethodName=servletRegistrationBean; initMethodName=null; destroyMethodName=(inferred); defined in io.fabric8.quickstarts.camel.Application] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.apache.camel.component.servlet.springboot.ServletMappingAutoConfiguration; factoryMethodName=servletRegistrationBean; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/apache/camel/component/servlet/springboot/ServletMappingAutoConfiguration.class]]
+2020-07-14 19:54:39.952  INFO 20080 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Dbcp; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Dbcp.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2020-07-14 19:54:40.652  INFO 20080 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$c3285c2c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-14 19:54:40.666  INFO 20080 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a0fe960d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-14 19:54:40.978  INFO 20080 --- [           main] org.xnio                                 : XNIO version 3.3.6.Final
+2020-07-14 19:54:40.996  INFO 20080 --- [           main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.6.Final
+2020-07-14 19:54:41.088  WARN 20080 --- [           main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2020-07-14 19:54:41.088  WARN 20080 --- [           main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-07-14 19:54:41.114  INFO 20080 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-07-14 19:54:41.114  INFO 20080 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2414 ms
+2020-07-14 19:54:41.487  INFO 20080 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'CamelServlet' to [/camel-rest-sql/*]
+2020-07-14 19:54:41.490  INFO 20080 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-07-14 19:54:41.493  INFO 20080 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2020-07-14 19:54:41.494  INFO 20080 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-07-14 19:54:41.494  INFO 20080 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-07-14 19:54:41.494  INFO 20080 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-07-14 19:54:41.494  INFO 20080 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-07-14 19:54:41.494  INFO 20080 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2020-07-14 19:54:41.494  INFO 20080 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2020-07-14 19:54:42.124  INFO 20080 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2e76d8d9: startup date [Tue Jul 14 19:54:38 UTC 2020]; root of context hierarchy
+2020-07-14 19:54:42.220  INFO 20080 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-07-14 19:54:42.222  INFO 20080 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-07-14 19:54:42.272  INFO 20080 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 19:54:42.273  INFO 20080 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 19:54:42.340  INFO 20080 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 19:54:43.443  INFO 20080 --- [           main] o.a.c.i.converter.DefaultTypeConverter   : Loaded 207 type converters
+2020-07-14 19:54:44.514  INFO 20080 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/home/elearn/target/classes/schema.sql]
+2020-07-14 19:54:44.527  INFO 20080 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/home/elearn/target/classes/schema.sql] in 12 ms.
+2020-07-14 19:54:45.134  INFO 20080 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-07-14 19:54:45.147  INFO 20080 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53bd5e56: startup date [Tue Jul 14 19:54:45 UTC 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2e76d8d9
+2020-07-14 19:54:45.184  INFO 20080 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'handlerExceptionResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=handlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=endpointWebMvcChildContextConfiguration; factoryMethodName=compositeHandlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcChildContextConfiguration]
+2020-07-14 19:54:45.237  INFO 20080 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-07-14 19:54:45.238  INFO 20080 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 91 ms
+2020-07-14 19:54:45.240  INFO 20080 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-07-14 19:54:45.308  INFO 20080 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2020-07-14 19:54:45.323  INFO 20080 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.endpoint.mvc.ManagementErrorEndpoint.invoke()
+2020-07-14 19:54:45.329  INFO 20080 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 19:54:45.330  INFO 20080 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 19:54:45.345  INFO 20080 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53bd5e56: startup date [Tue Jul 14 19:54:45 UTC 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2e76d8d9
+2020-07-14 19:54:45.441  INFO 20080 --- [           main] b.c.e.u.UndertowEmbeddedServletContainer : Undertow started on port(s) 8083 (https)
+2020-07-14 19:54:45.447  INFO 20080 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2020-07-14 19:54:45.553  INFO 20080 --- [           main] o.a.camel.spring.boot.RoutesCollector    : Loading additional Camel XML routes from: classpath:camel/*.xml
+2020-07-14 19:54:45.554  INFO 20080 --- [           main] o.a.camel.spring.boot.RoutesCollector    : Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+2020-07-14 19:54:45.555  INFO 20080 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.19.1 (CamelContext: CamelRestSql) is starting
+2020-07-14 19:54:45.557  INFO 20080 --- [           main] o.a.c.m.ManagedManagementStrategy        : JMX is enabled
+2020-07-14 19:54:45.680  INFO 20080 --- [           main] o.a.c.i.DefaultRuntimeEndpointRegistry   : Runtime endpoint registry is in extended mode gathering usage statistics of all incoming and outgoing endpoints (cache limit: 1000)
+2020-07-14 19:54:45.837  INFO 20080 --- [           main] o.a.camel.spring.SpringCamelContext      : StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+2020-07-14 19:54:45.951  INFO 20080 --- [           main] o.a.camel.spring.SpringCamelContext      : Route: drools-rate-api started and consuming from: servlet:/whatsapp?httpMethodRestrict=POST
+2020-07-14 19:54:45.953  INFO 20080 --- [           main] o.a.camel.spring.SpringCamelContext      : Route: route1 started and consuming from: servlet:/api-doc?httpMethodRestrict=GET&matchOnUriPrefix=true
+2020-07-14 19:54:45.953  INFO 20080 --- [           main] o.a.camel.spring.SpringCamelContext      : Total 2 routes, of which 2 are started.
+2020-07-14 19:54:45.954  INFO 20080 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.19.1 (CamelContext: CamelRestSql) started in 0.398 seconds
+2020-07-14 19:54:45.958  INFO 20080 --- [           main] o.a.c.c.s.CamelHttpTransportServlet      : Initialized CamelHttpTransportServlet[name=CamelServlet, contextPath=]
+2020-07-14 19:54:45.965  INFO 20080 --- [           main] b.c.e.u.UndertowEmbeddedServletContainer : Undertow started on port(s) 8443 (https)
+2020-07-14 19:54:45.971  INFO 20080 --- [           main] i.fabric8.quickstarts.camel.Application  : Started Application in 7.754 seconds (JVM running for 13.813)
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36mio.fabric8.quickstarts:spring[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding Fabric8 :: Quickstarts :: Spring-Boot :: Camel REST / SQL 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mspring-boot-maven-plugin:1.5.4.RELEASE:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36mspring[0;1m >>>[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 9 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 28 source files to /home/elearn/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mspring-boot-maven-plugin:1.5.4.RELEASE:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36mspring[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:1.5.4.RELEASE:run[m [1m(default-cli)[m @ [36mspring[0;1m ---[m
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.4.RELEASE)
+
+2020-07-14 20:01:30.290  INFO 20269 --- [           main] i.fabric8.quickstarts.camel.Application  : Starting Application on Segmatek-Kitkat with PID 20269 (/home/elearn/target/classes started by root in /home/elearn)
+2020-07-14 20:01:30.294  INFO 20269 --- [           main] i.fabric8.quickstarts.camel.Application  : The following profiles are active: dev
+2020-07-14 20:01:30.353  INFO 20269 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fbf23a0: startup date [Tue Jul 14 20:01:30 UTC 2020]; root of context hierarchy
+2020-07-14 20:01:31.194  INFO 20269 --- [           main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring/camel-context.xml]
+2020-07-14 20:01:31.457  INFO 20269 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'servletRegistrationBean' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=application; factoryMethodName=servletRegistrationBean; initMethodName=null; destroyMethodName=(inferred); defined in io.fabric8.quickstarts.camel.Application] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.apache.camel.component.servlet.springboot.ServletMappingAutoConfiguration; factoryMethodName=servletRegistrationBean; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/apache/camel/component/servlet/springboot/ServletMappingAutoConfiguration.class]]
+2020-07-14 20:01:31.549  INFO 20269 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Dbcp; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Dbcp.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2020-07-14 20:01:32.275  INFO 20269 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$7570f54f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-14 20:01:32.292  INFO 20269 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$53472f30] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-14 20:01:32.588  INFO 20269 --- [           main] org.xnio                                 : XNIO version 3.3.6.Final
+2020-07-14 20:01:32.607  INFO 20269 --- [           main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.6.Final
+2020-07-14 20:01:32.690  WARN 20269 --- [           main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2020-07-14 20:01:32.691  WARN 20269 --- [           main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-07-14 20:01:32.716  INFO 20269 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-07-14 20:01:32.716  INFO 20269 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2367 ms
+2020-07-14 20:01:33.058  INFO 20269 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'CamelServlet' to [/camel-rest-sql/*]
+2020-07-14 20:01:33.062  INFO 20269 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-07-14 20:01:33.065  INFO 20269 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2020-07-14 20:01:33.066  INFO 20269 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-07-14 20:01:33.066  INFO 20269 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-07-14 20:01:33.066  INFO 20269 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-07-14 20:01:33.066  INFO 20269 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-07-14 20:01:33.066  INFO 20269 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2020-07-14 20:01:33.066  INFO 20269 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2020-07-14 20:01:33.674  INFO 20269 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fbf23a0: startup date [Tue Jul 14 20:01:30 UTC 2020]; root of context hierarchy
+2020-07-14 20:01:33.763  INFO 20269 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-07-14 20:01:33.765  INFO 20269 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-07-14 20:01:33.807  INFO 20269 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 20:01:33.807  INFO 20269 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 20:01:33.863  INFO 20269 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 20:01:34.775  INFO 20269 --- [           main] o.a.c.i.converter.DefaultTypeConverter   : Loaded 207 type converters
+2020-07-14 20:01:35.807  INFO 20269 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/home/elearn/target/classes/schema.sql]
+2020-07-14 20:01:35.817  INFO 20269 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/home/elearn/target/classes/schema.sql] in 10 ms.
+2020-07-14 20:01:36.402  INFO 20269 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-07-14 20:01:36.416  INFO 20269 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2034dbcf: startup date [Tue Jul 14 20:01:36 UTC 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fbf23a0
+2020-07-14 20:01:36.468  INFO 20269 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'handlerExceptionResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=handlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=endpointWebMvcChildContextConfiguration; factoryMethodName=compositeHandlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcChildContextConfiguration]
+2020-07-14 20:01:36.536  INFO 20269 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-07-14 20:01:36.536  INFO 20269 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 120 ms
+2020-07-14 20:01:36.540  INFO 20269 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-07-14 20:01:36.624  INFO 20269 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2020-07-14 20:01:36.644  INFO 20269 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.endpoint.mvc.ManagementErrorEndpoint.invoke()
+2020-07-14 20:01:36.653  INFO 20269 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 20:01:36.654  INFO 20269 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 20:01:36.672  INFO 20269 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2034dbcf: startup date [Tue Jul 14 20:01:36 UTC 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fbf23a0
+2020-07-14 20:01:36.780  INFO 20269 --- [           main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-07-14 20:01:36.780  INFO 20269 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2034dbcf: startup date [Tue Jul 14 20:01:36 UTC 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fbf23a0
+2020-07-14 20:01:36.786 ERROR 20269 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Embedded servlet container failed to start. Port 8083 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8083 or configure this application to listen on another port.
+
+2020-07-14 20:01:36.787  INFO 20269 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fbf23a0: startup date [Tue Jul 14 20:01:30 UTC 2020]; root of context hierarchy
+2020-07-14 20:01:36.792  WARN 20269 --- [           main] ationConfigEmbeddedWebApplicationContext : Exception thrown from LifecycleProcessor on context close
+
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fbf23a0: startup date [Tue Jul 14 20:01:30 UTC 2020]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:427) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:999) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:958) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:750) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at io.fabric8.quickstarts.camel.Application.main(Application.java:110) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_252]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_252]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_252]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_252]
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:527) [spring-boot-maven-plugin-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_252]
+
+2020-07-14 20:01:36.793  INFO 20269 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-07-14 20:01:36.797  INFO 20269 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.19.1 (CamelContext: CamelRestSql) is shutting down
+2020-07-14 20:01:36.814  INFO 20269 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.19.1 (CamelContext: CamelRestSql) uptime 
+2020-07-14 20:01:36.815  INFO 20269 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.19.1 (CamelContext: CamelRestSql) is shutdown in 0.018 seconds
+[[1;33mWARNING[m] 
+[1;31mjava.lang.reflect.InvocationTargetException[m
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:498[m)
+    [1mat[m org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run ([1mAbstractRunMojo.java:527[m)
+    [1mat[m java.lang.Thread.run ([1mThread.java:748[m)
+[1mCaused by[m: org.springframework.boot.context.embedded.PortInUseException: [1;31mPort 8083 is already in use[m
+    [1mat[m org.springframework.boot.context.embedded.undertow.UndertowEmbeddedServletContainer.start ([1mUndertowEmbeddedServletContainer.java:169[m)
+    [1mat[m org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer ([1mEmbeddedWebApplicationContext.java:297[m)
+    [1mat[m org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh ([1mEmbeddedWebApplicationContext.java:145[m)
+    [1mat[m org.springframework.context.support.AbstractApplicationContext.refresh ([1mAbstractApplicationContext.java:546[m)
+    [1mat[m org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh ([1mEmbeddedWebApplicationContext.java:122[m)
+    [1mat[m org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.createChildManagementContext ([1mEndpointWebMvcAutoConfiguration.java:193[m)
+    [1mat[m org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.afterSingletonsInstantiated ([1mEndpointWebMvcAutoConfiguration.java:156[m)
+    [1mat[m org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons ([1mDefaultListableBeanFactory.java:781[m)
+    [1mat[m org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization ([1mAbstractApplicationContext.java:867[m)
+    [1mat[m org.springframework.context.support.AbstractApplicationContext.refresh ([1mAbstractApplicationContext.java:543[m)
+    [1mat[m org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh ([1mEmbeddedWebApplicationContext.java:122[m)
+    [1mat[m org.springframework.boot.SpringApplication.refresh ([1mSpringApplication.java:693[m)
+    [1mat[m org.springframework.boot.SpringApplication.refreshContext ([1mSpringApplication.java:360[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:303[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1118[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1107[m)
+    [1mat[m io.fabric8.quickstarts.camel.Application.main ([1mApplication.java:110[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:498[m)
+    [1mat[m org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run ([1mAbstractRunMojo.java:527[m)
+    [1mat[m java.lang.Thread.run ([1mThread.java:748[m)
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36mio.fabric8.quickstarts:spring[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding Fabric8 :: Quickstarts :: Spring-Boot :: Camel REST / SQL 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mspring-boot-maven-plugin:1.5.4.RELEASE:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36mspring[0;1m >>>[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 9 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 28 source files to /home/elearn/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mspring-boot-maven-plugin:1.5.4.RELEASE:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36mspring[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:1.5.4.RELEASE:run[m [1m(default-cli)[m @ [36mspring[0;1m ---[m
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.4.RELEASE)
+
+2020-07-14 20:02:17.958  INFO 20337 --- [           main] i.fabric8.quickstarts.camel.Application  : Starting Application on Segmatek-Kitkat with PID 20337 (/home/elearn/target/classes started by root in /home/elearn)
+2020-07-14 20:02:17.962  INFO 20337 --- [           main] i.fabric8.quickstarts.camel.Application  : The following profiles are active: dev
+2020-07-14 20:02:18.019  INFO 20337 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d8c9998: startup date [Tue Jul 14 20:02:18 UTC 2020]; root of context hierarchy
+2020-07-14 20:02:18.973  INFO 20337 --- [           main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring/camel-context.xml]
+2020-07-14 20:02:19.247  INFO 20337 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'servletRegistrationBean' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=application; factoryMethodName=servletRegistrationBean; initMethodName=null; destroyMethodName=(inferred); defined in io.fabric8.quickstarts.camel.Application] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.apache.camel.component.servlet.springboot.ServletMappingAutoConfiguration; factoryMethodName=servletRegistrationBean; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/apache/camel/component/servlet/springboot/ServletMappingAutoConfiguration.class]]
+2020-07-14 20:02:19.323  INFO 20337 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Dbcp; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Dbcp.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2020-07-14 20:02:20.006  INFO 20337 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$c138d9de] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-14 20:02:20.021  INFO 20337 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9f0f13bf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-14 20:02:20.349  INFO 20337 --- [           main] org.xnio                                 : XNIO version 3.3.6.Final
+2020-07-14 20:02:20.366  INFO 20337 --- [           main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.6.Final
+2020-07-14 20:02:20.463  WARN 20337 --- [           main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2020-07-14 20:02:20.464  WARN 20337 --- [           main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-07-14 20:02:20.489  INFO 20337 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-07-14 20:02:20.489  INFO 20337 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2474 ms
+2020-07-14 20:02:20.876  INFO 20337 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'CamelServlet' to [/camel-rest-sql/*]
+2020-07-14 20:02:20.880  INFO 20337 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-07-14 20:02:20.884  INFO 20337 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2020-07-14 20:02:20.885  INFO 20337 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-07-14 20:02:20.885  INFO 20337 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-07-14 20:02:20.885  INFO 20337 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-07-14 20:02:20.885  INFO 20337 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-07-14 20:02:20.886  INFO 20337 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2020-07-14 20:02:20.886  INFO 20337 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2020-07-14 20:02:21.479  INFO 20337 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d8c9998: startup date [Tue Jul 14 20:02:18 UTC 2020]; root of context hierarchy
+2020-07-14 20:02:21.570  INFO 20337 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-07-14 20:02:21.572  INFO 20337 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-07-14 20:02:21.617  INFO 20337 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 20:02:21.618  INFO 20337 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 20:02:21.681  INFO 20337 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 20:02:22.665  INFO 20337 --- [           main] o.a.c.i.converter.DefaultTypeConverter   : Loaded 207 type converters
+2020-07-14 20:02:23.795  INFO 20337 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/home/elearn/target/classes/schema.sql]
+2020-07-14 20:02:23.806  INFO 20337 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/home/elearn/target/classes/schema.sql] in 11 ms.
+2020-07-14 20:02:24.489  INFO 20337 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-07-14 20:02:24.507  INFO 20337 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aff341b: startup date [Tue Jul 14 20:02:24 UTC 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d8c9998
+2020-07-14 20:02:24.566  INFO 20337 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'handlerExceptionResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=handlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=endpointWebMvcChildContextConfiguration; factoryMethodName=compositeHandlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcChildContextConfiguration]
+2020-07-14 20:02:24.627  INFO 20337 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-07-14 20:02:24.628  INFO 20337 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 121 ms
+2020-07-14 20:02:24.630  INFO 20337 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-07-14 20:02:24.694  INFO 20337 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2020-07-14 20:02:24.710  INFO 20337 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.endpoint.mvc.ManagementErrorEndpoint.invoke()
+2020-07-14 20:02:24.719  INFO 20337 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 20:02:24.719  INFO 20337 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 20:02:24.741  INFO 20337 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aff341b: startup date [Tue Jul 14 20:02:24 UTC 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d8c9998
+2020-07-14 20:02:24.874  INFO 20337 --- [           main] b.c.e.u.UndertowEmbeddedServletContainer : Undertow started on port(s) 8083 (https)
+2020-07-14 20:02:24.881  INFO 20337 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2020-07-14 20:02:25.007  INFO 20337 --- [           main] o.a.camel.spring.boot.RoutesCollector    : Loading additional Camel XML routes from: classpath:camel/*.xml
+2020-07-14 20:02:25.008  INFO 20337 --- [           main] o.a.camel.spring.boot.RoutesCollector    : Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+2020-07-14 20:02:25.009  INFO 20337 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.19.1 (CamelContext: CamelRestSql) is starting
+2020-07-14 20:02:25.011  INFO 20337 --- [           main] o.a.c.m.ManagedManagementStrategy        : JMX is enabled
+2020-07-14 20:02:25.140  INFO 20337 --- [           main] o.a.c.i.DefaultRuntimeEndpointRegistry   : Runtime endpoint registry is in extended mode gathering usage statistics of all incoming and outgoing endpoints (cache limit: 1000)
+2020-07-14 20:02:25.311  INFO 20337 --- [           main] o.a.camel.spring.SpringCamelContext      : StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+2020-07-14 20:02:25.435  INFO 20337 --- [           main] o.a.camel.spring.SpringCamelContext      : Route: drools-rate-api started and consuming from: servlet:/whatsapp?httpMethodRestrict=POST
+2020-07-14 20:02:25.437  INFO 20337 --- [           main] o.a.camel.spring.SpringCamelContext      : Route: route1 started and consuming from: servlet:/api-doc?httpMethodRestrict=GET&matchOnUriPrefix=true
+2020-07-14 20:02:25.438  INFO 20337 --- [           main] o.a.camel.spring.SpringCamelContext      : Total 2 routes, of which 2 are started.
+2020-07-14 20:02:25.439  INFO 20337 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.19.1 (CamelContext: CamelRestSql) started in 0.429 seconds
+2020-07-14 20:02:25.441  INFO 20337 --- [           main] o.a.c.c.s.CamelHttpTransportServlet      : Initialized CamelHttpTransportServlet[name=CamelServlet, contextPath=]
+2020-07-14 20:02:25.445  INFO 20337 --- [           main] b.c.e.u.UndertowEmbeddedServletContainer : Undertow started on port(s) 8443 (https)
+2020-07-14 20:02:25.450  INFO 20337 --- [           main] i.fabric8.quickstarts.camel.Application  : Started Application in 7.924 seconds (JVM running for 13.18)
+2020-07-14 20:02:49.962  INFO 20337 --- [  XNIO-3 task-3] drools-rate-api                          : Try
+2020-07-14 20:02:49.966  INFO 20337 --- [  XNIO-3 task-3] DEBUG                                    : Exchange[ExchangePattern: InOut, Headers: {Accept=*/*, AccountSid=AC3ee681fcead38f95d83923cf18500a84, ApiVersion=2010-04-01, Body=Try, breadcrumbId=ID-Segmatek-Kitkat-43757-1594756941851-0-1, Cache-Control=max-age=259200, CamelHttpCharacterEncoding=UTF-8, CamelHttpMethod=POST, CamelHttpPath=/, CamelHttpQuery=null, CamelHttpServletRequest=HttpServletRequestImpl [ POST /camel-rest-sql/whatsapp/ ], CamelHttpServletResponse=io.undertow.servlet.spec.HttpServletResponseImpl@1bc13b33, CamelHttpUri=/camel-rest-sql/whatsapp/, CamelHttpUrl=https://twilio/camel-rest-sql/whatsapp/, CamelServletContextPath=/whatsapp, Connection=close, Content-Length=316, Content-Type=application/x-www-form-urlencoded, From=whatsapp:+9613001294, Host=twilio, I-Twilio-Idempotency-Token=79c20165-e1ed-49ab-af64-6927f697f7dd, MessageSid=SMaa6e228948762797a30ffbffe0e7d49d, NumMedia=0, NumSegments=1, SmsMessageSid=SMaa6e228948762797a30ffbffe0e7d49d, SmsSid=SMaa6e228948762797a30ffbffe0e7d49d, SmsStatus=received, To=whatsapp:+14155238886, User-Agent=TwilioProxy/1.1, X-Twilio-Signature=vbKzff01mZSUX/WCkmy82u19H3U=}, BodyType: String, Body: ]
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36mio.fabric8.quickstarts:spring[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding Fabric8 :: Quickstarts :: Spring-Boot :: Camel REST / SQL 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mspring-boot-maven-plugin:1.5.4.RELEASE:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36mspring[0;1m >>>[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 9 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 28 source files to /home/elearn/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:testCompile[m [1m(default-testCompile)[m @ [36mspring[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mspring-boot-maven-plugin:1.5.4.RELEASE:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36mspring[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:1.5.4.RELEASE:run[m [1m(default-cli)[m @ [36mspring[0;1m ---[m
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.4.RELEASE)
+
+2020-07-14 20:05:59.953  INFO 20487 --- [           main] i.fabric8.quickstarts.camel.Application  : Starting Application on Segmatek-Kitkat with PID 20487 (/home/elearn/target/classes started by root in /home/elearn)
+2020-07-14 20:05:59.958  INFO 20487 --- [           main] i.fabric8.quickstarts.camel.Application  : The following profiles are active: dev
+2020-07-14 20:06:00.013  INFO 20487 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@350bf37a: startup date [Tue Jul 14 20:06:00 UTC 2020]; root of context hierarchy
+2020-07-14 20:06:00.901  INFO 20487 --- [           main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring/camel-context.xml]
+2020-07-14 20:06:01.152  INFO 20487 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'servletRegistrationBean' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=application; factoryMethodName=servletRegistrationBean; initMethodName=null; destroyMethodName=(inferred); defined in io.fabric8.quickstarts.camel.Application] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.apache.camel.component.servlet.springboot.ServletMappingAutoConfiguration; factoryMethodName=servletRegistrationBean; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/apache/camel/component/servlet/springboot/ServletMappingAutoConfiguration.class]]
+2020-07-14 20:06:01.220  INFO 20487 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Dbcp; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Dbcp.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2020-07-14 20:06:02.071  INFO 20487 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$147f3acb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-14 20:06:02.091  INFO 20487 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f25574ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-14 20:06:02.482  INFO 20487 --- [           main] org.xnio                                 : XNIO version 3.3.6.Final
+2020-07-14 20:06:02.508  INFO 20487 --- [           main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.6.Final
+2020-07-14 20:06:02.618  WARN 20487 --- [           main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2020-07-14 20:06:02.619  WARN 20487 --- [           main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-07-14 20:06:02.654  INFO 20487 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-07-14 20:06:02.654  INFO 20487 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2645 ms
+2020-07-14 20:06:03.073  INFO 20487 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'CamelServlet' to [/camel-rest-sql/*]
+2020-07-14 20:06:03.077  INFO 20487 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-07-14 20:06:03.080  INFO 20487 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2020-07-14 20:06:03.081  INFO 20487 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-07-14 20:06:03.081  INFO 20487 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-07-14 20:06:03.081  INFO 20487 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-07-14 20:06:03.081  INFO 20487 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-07-14 20:06:03.081  INFO 20487 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2020-07-14 20:06:03.081  INFO 20487 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2020-07-14 20:06:03.709  INFO 20487 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@350bf37a: startup date [Tue Jul 14 20:06:00 UTC 2020]; root of context hierarchy
+2020-07-14 20:06:03.792  INFO 20487 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-07-14 20:06:03.794  INFO 20487 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-07-14 20:06:03.835  INFO 20487 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 20:06:03.835  INFO 20487 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 20:06:03.895  INFO 20487 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 20:06:04.981  INFO 20487 --- [           main] o.a.c.i.converter.DefaultTypeConverter   : Loaded 207 type converters
+2020-07-14 20:06:06.002  INFO 20487 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/home/elearn/target/classes/schema.sql]
+2020-07-14 20:06:06.009  INFO 20487 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/home/elearn/target/classes/schema.sql] in 7 ms.
+2020-07-14 20:06:06.617  INFO 20487 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-07-14 20:06:06.629  INFO 20487 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3542cb46: startup date [Tue Jul 14 20:06:06 UTC 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@350bf37a
+2020-07-14 20:06:06.662  INFO 20487 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'handlerExceptionResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=handlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=endpointWebMvcChildContextConfiguration; factoryMethodName=compositeHandlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcChildContextConfiguration]
+2020-07-14 20:06:06.715  INFO 20487 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-07-14 20:06:06.715  INFO 20487 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 86 ms
+2020-07-14 20:06:06.718  INFO 20487 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-07-14 20:06:06.778  INFO 20487 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2020-07-14 20:06:06.792  INFO 20487 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.endpoint.mvc.ManagementErrorEndpoint.invoke()
+2020-07-14 20:06:06.798  INFO 20487 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 20:06:06.798  INFO 20487 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 20:06:06.814  INFO 20487 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3542cb46: startup date [Tue Jul 14 20:06:06 UTC 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@350bf37a
+2020-07-14 20:06:06.913  INFO 20487 --- [           main] b.c.e.u.UndertowEmbeddedServletContainer : Undertow started on port(s) 8083 (https)
+2020-07-14 20:06:06.918  INFO 20487 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2020-07-14 20:06:07.042  INFO 20487 --- [           main] o.a.camel.spring.boot.RoutesCollector    : Loading additional Camel XML routes from: classpath:camel/*.xml
+2020-07-14 20:06:07.042  INFO 20487 --- [           main] o.a.camel.spring.boot.RoutesCollector    : Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+2020-07-14 20:06:07.044  INFO 20487 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.19.1 (CamelContext: CamelRestSql) is starting
+2020-07-14 20:06:07.045  INFO 20487 --- [           main] o.a.c.m.ManagedManagementStrategy        : JMX is enabled
+2020-07-14 20:06:07.184  INFO 20487 --- [           main] o.a.c.i.DefaultRuntimeEndpointRegistry   : Runtime endpoint registry is in extended mode gathering usage statistics of all incoming and outgoing endpoints (cache limit: 1000)
+2020-07-14 20:06:07.341  INFO 20487 --- [           main] o.a.camel.spring.SpringCamelContext      : StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+2020-07-14 20:06:07.456  INFO 20487 --- [           main] o.a.camel.spring.SpringCamelContext      : Route: drools-rate-api started and consuming from: servlet:/whatsapp?httpMethodRestrict=POST
+2020-07-14 20:06:07.458  INFO 20487 --- [           main] o.a.camel.spring.SpringCamelContext      : Route: route1 started and consuming from: servlet:/api-doc?httpMethodRestrict=GET&matchOnUriPrefix=true
+2020-07-14 20:06:07.458  INFO 20487 --- [           main] o.a.camel.spring.SpringCamelContext      : Total 2 routes, of which 2 are started.
+2020-07-14 20:06:07.459  INFO 20487 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.19.1 (CamelContext: CamelRestSql) started in 0.415 seconds
+2020-07-14 20:06:07.461  INFO 20487 --- [           main] o.a.c.c.s.CamelHttpTransportServlet      : Initialized CamelHttpTransportServlet[name=CamelServlet, contextPath=]
+2020-07-14 20:06:07.466  INFO 20487 --- [           main] b.c.e.u.UndertowEmbeddedServletContainer : Undertow started on port(s) 8443 (https)
+2020-07-14 20:06:07.471  INFO 20487 --- [           main] i.fabric8.quickstarts.camel.Application  : Started Application in 7.976 seconds (JVM running for 13.275)
+2020-07-14 20:06:26.327  INFO 20487 --- [  XNIO-3 task-3] drools-rate-api                          : 😘
+2020-07-14 20:06:26.332  INFO 20487 --- [  XNIO-3 task-3] DEBUG                                    : Exchange[ExchangePattern: InOut, Headers: {Accept=*/*, AccountSid=AC3ee681fcead38f95d83923cf18500a84, ApiVersion=2010-04-01, Body=😘, breadcrumbId=ID-Segmatek-Kitkat-46741-1594757164072-0-1, Cache-Control=max-age=259200, CamelHttpCharacterEncoding=UTF-8, CamelHttpMethod=POST, CamelHttpPath=/, CamelHttpQuery=null, CamelHttpServletRequest=HttpServletRequestImpl [ POST /camel-rest-sql/whatsapp/ ], CamelHttpServletResponse=io.undertow.servlet.spec.HttpServletResponseImpl@75323760, CamelHttpUri=/camel-rest-sql/whatsapp/, CamelHttpUrl=https://twilio/camel-rest-sql/whatsapp/, CamelServletContextPath=/whatsapp, Connection=close, Content-Length=325, Content-Type=application/x-www-form-urlencoded, From=whatsapp:+9613001294, Host=twilio, I-Twilio-Idempotency-Token=3ab631a0-2e4c-42d5-b7d0-17034e54a884, MessageSid=SMf25d7e0a6247a4d1bd0fbda6bf1238e4, NumMedia=0, NumSegments=1, SmsMessageSid=SMf25d7e0a6247a4d1bd0fbda6bf1238e4, SmsSid=SMf25d7e0a6247a4d1bd0fbda6bf1238e4, SmsStatus=received, To=whatsapp:+14155238886, User-Agent=TwilioProxy/1.1, X-Twilio-Signature=7vAqpefDd4YZu4Jw7kd9oAinzgk=}, BodyType: String, Body: ]
