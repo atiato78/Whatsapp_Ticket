@@ -10,7 +10,7 @@ camel:
 
 # Binding health checks to a different port
 management:
-  port: 8083
+  port: 8086
 
 # disable all management enpoints except health
 endpoints:
